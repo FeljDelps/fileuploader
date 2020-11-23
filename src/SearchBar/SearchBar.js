@@ -11,9 +11,11 @@ class SearchBar extends Component {
                 </div>
                 <div className='Searchbar_content'>
                     <SearchBox 
-                        searchTerm={this.props.searchTerm}/>
+                        searchTerm={this.props.searchTerm}
+                        handleUpdate={this.props.handleUpdate}/>
                     <FilterOptions
-                        filterOption={this.props.filterOption} />
+                        filterOption={this.props.filterOption}
+                        handleFilterChange={this.props.handleFilterChange} />
                 </div>
             </div>
         );
